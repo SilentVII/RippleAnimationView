@@ -13,6 +13,7 @@
 @property (nonatomic, strong) CALayer * rippleLayer1;
 @property (nonatomic, strong) CALayer * rippleLayer2;
 @property (nonatomic, strong) CALayer * rippleLayer3;
+
 @end
 
 @implementation RippleView
@@ -28,26 +29,34 @@
 }
 
 -(void)creatRippleAnimate{
+    
+    
     _rippleLayer1 = [CALayer layer];
     _rippleLayer1.frame = self.bounds;
     _rippleLayer1.cornerRadius = self.frame.size.width/2;
-    _rippleLayer1.borderColor = ColorWithAlpha(255, 216, 87, 0.5).CGColor;
+    _rippleLayer1.borderColor = self.rippleColor?self.rippleColor.CGColor:ColorWithAlpha(255, 216, 87, 0.5).CGColor;
     _rippleLayer1.borderWidth = 0.5;
     [self.layer addSublayer:_rippleLayer1];
     
     _rippleLayer2 = [CALayer layer];
     _rippleLayer2.frame = self.bounds;
     _rippleLayer2.cornerRadius = self.frame.size.width/2;
-    _rippleLayer2.borderColor = ColorWithAlpha(255, 216, 87, 0.5).CGColor;
+    _rippleLayer2.borderColor = self.rippleColor?self.rippleColor.CGColor:ColorWithAlpha(255, 216, 87, 0.5).CGColor;
     _rippleLayer2.borderWidth = 0.5;
     [self.layer addSublayer:_rippleLayer2];
     
     _rippleLayer3 = [CALayer layer];
     _rippleLayer3.frame = self.bounds;
     _rippleLayer3.cornerRadius = self.frame.size.width/2;
-    _rippleLayer3.borderColor = ColorWithAlpha(255, 216, 87, 0.5).CGColor;
+    _rippleLayer3.borderColor = self.rippleColor?self.rippleColor.CGColor:ColorWithAlpha(255, 216, 87, 0.5).CGColor;
     _rippleLayer3.borderWidth = 0.5;
     [self.layer addSublayer:_rippleLayer3];
+    
+    UIView * centerView = [[UIView alloc] initWithFrame:self.bounds];
+    centerView.backgroundColor = self.centerColor?self.centerColor:[UIColor whiteColor];
+    centerView.layer.cornerRadius = self.bounds.size.width/2;
+    centerView.layer.masksToBounds = YES;
+    [self addSubview:centerView];
 
     [_rippleLayer1 addAnimation:[self rippleAnimationGroupWithIndex:0] forKey:@"ripple"];
     [_rippleLayer2 addAnimation:[self rippleAnimationGroupWithIndex:1] forKey:@"ripple"];
@@ -61,7 +70,7 @@
     group.animations = animateArr;
     group.beginTime = CACurrentMediaTime() + (double)index * 0.5;
     group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
-    group.duration = 2.5;
+    group.duration = self.singleRippleDuration>0?self.singleRippleDuration:2.5;
     group.repeatCount = HUGE;
     group.removedOnCompletion = NO;
     return group;
@@ -71,7 +80,7 @@
     CABasicAnimation * scaleAnimate = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimate.repeatCount = HUGE;
     scaleAnimate.fromValue = @(1.0);
-    scaleAnimate.toValue = @(3.0);
+    scaleAnimate.toValue = self.scaleTimes?@(self.scaleTimes):@(3.0);
     return scaleAnimate;
 }
 

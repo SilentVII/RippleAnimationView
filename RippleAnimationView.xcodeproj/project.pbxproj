@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E31BAB1C221D406800682D0C /* CricleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB16221D406800682D0C /* CricleProgressView.m */; };
+		E31BAB1D221D406800682D0C /* CricleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB18221D406800682D0C /* CricleView.m */; };
+		E31BAB1F221D406800682D0C /* RippleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB1B221D406800682D0C /* RippleView.m */; };
 		E3954CBD21475C6A00C62146 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954CBC21475C6A00C62146 /* AppDelegate.m */; };
 		E3954CC521475C7A00C62146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3954CC421475C7A00C62146 /* Assets.xcassets */; };
 		E3954CC821475C7A00C62146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3954CC621475C7A00C62146 /* LaunchScreen.storyboard */; };
 		E3954CCB21475C7A00C62146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954CCA21475C7A00C62146 /* main.m */; };
 		E3954CD621476DAD00C62146 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954CD521476DAD00C62146 /* MainViewController.m */; };
-		E3954CD92148BC4E00C62146 /* RippleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954CD82148BC4E00C62146 /* RippleView.m */; };
-		E3954D26214A959700C62146 /* NCProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954D25214A959700C62146 /* NCProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E31BAB15221D406800682D0C /* CricleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CricleProgressView.h; sourceTree = "<group>"; };
+		E31BAB16221D406800682D0C /* CricleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CricleProgressView.m; sourceTree = "<group>"; };
+		E31BAB17221D406800682D0C /* CricleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CricleView.h; sourceTree = "<group>"; };
+		E31BAB18221D406800682D0C /* CricleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CricleView.m; sourceTree = "<group>"; };
+		E31BAB1A221D406800682D0C /* RippleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleView.h; sourceTree = "<group>"; };
+		E31BAB1B221D406800682D0C /* RippleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleView.m; sourceTree = "<group>"; };
 		E3954CB821475C6A00C62146 /* RippleAnimationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleAnimationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3954CBB21475C6A00C62146 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3954CBC21475C6A00C62146 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,10 +33,6 @@
 		E3954CCA21475C7A00C62146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3954CD421476DAD00C62146 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E3954CD521476DAD00C62146 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E3954CD72148BC4E00C62146 /* RippleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RippleView.h; sourceTree = "<group>"; };
-		E3954CD82148BC4E00C62146 /* RippleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RippleView.m; sourceTree = "<group>"; };
-		E3954D24214A959700C62146 /* NCProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCProgressView.h; sourceTree = "<group>"; };
-		E3954D25214A959700C62146 /* NCProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E31BAB13221D406800682D0C /* RippleView */ = {
+			isa = PBXGroup;
+			children = (
+				E31BAB14221D406800682D0C /* CricleProgress */,
+				E31BAB1A221D406800682D0C /* RippleView.h */,
+				E31BAB1B221D406800682D0C /* RippleView.m */,
+			);
+			path = RippleView;
+			sourceTree = "<group>";
+		};
+		E31BAB14221D406800682D0C /* CricleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				E31BAB15221D406800682D0C /* CricleProgressView.h */,
+				E31BAB16221D406800682D0C /* CricleProgressView.m */,
+				E31BAB17221D406800682D0C /* CricleView.h */,
+				E31BAB18221D406800682D0C /* CricleView.m */,
+			);
+			path = CricleProgress;
+			sourceTree = "<group>";
+		};
 		E3954CAF21475C6900C62146 = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +86,11 @@
 		E3954CBA21475C6A00C62146 /* RippleAnimationView */ = {
 			isa = PBXGroup;
 			children = (
+				E31BAB13221D406800682D0C /* RippleView */,
 				E3954CBB21475C6A00C62146 /* AppDelegate.h */,
 				E3954CBC21475C6A00C62146 /* AppDelegate.m */,
 				E3954CD421476DAD00C62146 /* MainViewController.h */,
 				E3954CD521476DAD00C62146 /* MainViewController.m */,
-				E3954CD72148BC4E00C62146 /* RippleView.h */,
-				E3954CD82148BC4E00C62146 /* RippleView.m */,
-				E3954D24214A959700C62146 /* NCProgressView.h */,
-				E3954D25214A959700C62146 /* NCProgressView.m */,
 				E3954CC421475C7A00C62146 /* Assets.xcassets */,
 				E3954CC621475C7A00C62146 /* LaunchScreen.storyboard */,
 				E3954CC921475C7A00C62146 /* Info.plist */,
@@ -147,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31BAB1D221D406800682D0C /* CricleView.m in Sources */,
 				E3954CCB21475C7A00C62146 /* main.m in Sources */,
+				E31BAB1C221D406800682D0C /* CricleProgressView.m in Sources */,
 				E3954CD621476DAD00C62146 /* MainViewController.m in Sources */,
-				E3954CD92148BC4E00C62146 /* RippleView.m in Sources */,
-				E3954D26214A959700C62146 /* NCProgressView.m in Sources */,
+				E31BAB1F221D406800682D0C /* RippleView.m in Sources */,
 				E3954CBD21475C6A00C62146 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

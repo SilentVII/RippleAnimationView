@@ -16,25 +16,29 @@
 @property (nonatomic, strong) UIColor * rippleColor;
 
 /**
- 中间圆的颜色 默认为白色
- */
-@property (nonatomic, strong) UIColor * centerColor;
-
-/**
  扩散的倍数(放大的倍数)  默认为3
  */
 @property (nonatomic, assign) CGFloat scaleTimes;
 
 
 /**
- 单次扩散的动画时常  默认2.5s
+ 单次扩散的动画时长  默认2.5s
  */
 @property (nonatomic, assign) CFTimeInterval singleRippleDuration;
 
+- (instancetype )initWithFrame:(CGRect)frame;
 
-- (instancetype)init NS_UNAVAILABLE;
+- (void)startAnimation;
 
-- (instancetype )initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
+- (void)stopAnimation;
 
--(void)creatRippleAnimate;
+/**
+ 出现动画
+ */
+- (void)startRipplrWithShowAnimation;
+
+/**
+ 消失动画
+ */
+- (void)stopRippleWithHiddenAnimation;
 @end

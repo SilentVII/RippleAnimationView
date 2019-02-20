@@ -10,6 +10,7 @@
 		E31BAB1C221D406800682D0C /* CricleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB16221D406800682D0C /* CricleProgressView.m */; };
 		E31BAB1D221D406800682D0C /* CricleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB18221D406800682D0C /* CricleView.m */; };
 		E31BAB1F221D406800682D0C /* RippleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31BAB1B221D406800682D0C /* RippleView.m */; };
+		E31BAB29221D5F3F00682D0C /* progressGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = E31BAB28221D5F3F00682D0C /* progressGif.gif */; };
 		E3954CBD21475C6A00C62146 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3954CBC21475C6A00C62146 /* AppDelegate.m */; };
 		E3954CC521475C7A00C62146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3954CC421475C7A00C62146 /* Assets.xcassets */; };
 		E3954CC821475C7A00C62146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3954CC621475C7A00C62146 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,7 @@
 		E31BAB18221D406800682D0C /* CricleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CricleView.m; sourceTree = "<group>"; };
 		E31BAB1A221D406800682D0C /* RippleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleView.h; sourceTree = "<group>"; };
 		E31BAB1B221D406800682D0C /* RippleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleView.m; sourceTree = "<group>"; };
+		E31BAB28221D5F3F00682D0C /* progressGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progressGif.gif; sourceTree = "<group>"; };
 		E3954CB821475C6A00C62146 /* RippleAnimationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RippleAnimationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3954CBB21475C6A00C62146 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3954CBC21475C6A00C62146 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				E3954CBC21475C6A00C62146 /* AppDelegate.m */,
 				E3954CD421476DAD00C62146 /* MainViewController.h */,
 				E3954CD521476DAD00C62146 /* MainViewController.m */,
+				E31BAB28221D5F3F00682D0C /* progressGif.gif */,
 				E3954CC421475C7A00C62146 /* Assets.xcassets */,
 				E3954CC621475C7A00C62146 /* LaunchScreen.storyboard */,
 				E3954CC921475C7A00C62146 /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31BAB29221D5F3F00682D0C /* progressGif.gif in Resources */,
 				E3954CC821475C7A00C62146 /* LaunchScreen.storyboard in Resources */,
 				E3954CC521475C7A00C62146 /* Assets.xcassets in Resources */,
 			);
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nick.RippleAnimationView;
+				PRODUCT_BUNDLE_IDENTIFIER = Nick.RippleAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nick.RippleAnimationView;
+				PRODUCT_BUNDLE_IDENTIFIER = Nick.RippleAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
